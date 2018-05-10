@@ -3,14 +3,17 @@
 <head>
     <title>@yield('title', 'Foobooks')</title>
     <meta charset='utf-8'>
-    <link href='/css/refugees.css' type='text/css' rel='stylesheet'>
+    <link href='../../../public/css/refuugees.css' type='text/css' rel='stylesheet'>
 
     @stack('head')
 </head>
 <body>
 
 <header>
-    Refugees Database
+    <div style='margin-left:780px;' >
+    <h2>Refugees Database </h2>
+    </div>
+    <link href='../../../public/css/refuugees.css' type='text/css' rel='stylesheet'>
 </header>
 
 <section>
@@ -18,7 +21,7 @@
 </section>
 
 <footer>
-    &copy; {{ date('Y') }}
+   Developed By Osama Balkasem
 </footer>
 
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>

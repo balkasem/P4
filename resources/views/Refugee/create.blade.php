@@ -1,8 +1,8 @@
-{{-- /resources/views/books/create.blade.php --}}
+{{-- /resources/views/refugees/create.blade.php --}}
 @extends('layouts.master')
 
 @section('title')
-    New book
+    New Refugee
 @endsection
 
 @section('content')
@@ -34,8 +34,6 @@
             <br/>
                 <label for='family_id'>* Family</label>
                 @foreach($familiesForChechBoxes as $id => $family_name)
-                    <ul class='families'>
-                        <li>
                             <label>
                                 <input
 
@@ -44,14 +42,9 @@
                                         value='{{ $id }}'>
                                 {{ $family_name }}
                             </label>
-                        </li>
-                    </ul>
                 @endforeach
-
-
         </fieldset>
-
-        <input type='submit' value='Add book'>
+        <input type='submit' value='Add refugees'>
     </form>
     <a href='../Refugees'> Back to All Refugees </a>
     @if(count($errors) > 0)
