@@ -7,7 +7,7 @@
 
 @section('content')
     <h1>Update Refugee</h1>
-    <form method='POST' action='/Test/public/Refugees/{{ $refugee->id }}'>
+    <form method='POST' action='/Refugees/{{ $refugee->id }}'>
         {{ csrf_field() }}
 
         <fieldset>

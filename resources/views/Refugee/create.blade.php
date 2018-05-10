@@ -8,9 +8,8 @@
 @section('content')
     <h1>Add a new refugee</h1>
 
-    <form method='POST' action='/Test/public/Refugees'>
+    <form method='POST' action='/Refugees'>
         {{ csrf_field() }}
-
         <fieldset>
             <label for='firstName'>First Name</label>
             <input type='text' name='firstName' id='firstName' value='{{ old('firstName') }}' >

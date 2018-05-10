@@ -15,6 +15,6 @@
     <p>
         New refugee {{ $name }} is added successfully ...
         <br/>
-        <a href='../Refugees'> Back to All Refugees </a>
+        <a href='/Refugees'> Back to All Refugees </a>
     </p>
 @endsection

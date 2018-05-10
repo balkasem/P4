@@ -15,7 +15,7 @@
 
     <img src='{{ $refugee->cover_url }}' class='cover' alt='Cover image for {{ $refugee->first_name }}'>
 
-    <form method='POST' action='../{{ $refugee->id }}/destroy'>
+    <form method='POST' action='/{{ $refugee->id }}/destroy'>
 
         {{ csrf_field() }}
         <input type='submit' value='Yes, delete it!' class='btn btn-danger btn-small'>
