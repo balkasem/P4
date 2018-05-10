@@ -241,7 +241,7 @@ class RefugeeController extends Controller
         if(!$refugee){
 
         }
-        return view('refugee.delete')->with([
+        return view('Refugee.delete')->with([
             'refugee' => $refugee,
         ]);
     }
